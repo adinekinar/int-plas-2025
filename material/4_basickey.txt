@@ -1,0 +1,30 @@
+01:import 'package:flutter/material.dart';
+02:
+03:_1_ main() {
+04:  runApp(MyApp());
+05:}
+06:
+07:class MyApp extends StatelessWidget {
+08:  const MyApp(_2_.key);
+09:
+10:  @override
+11:  Widget build(BuildContext context) {
+12:    return _3_(
+13:      _4_: Text(
+14:        'This is a very long text that will overflow the screen width and get clipped at the edge.',
+15:        textAlign: TextAlign.center,  // Center align text
+16:        maxLines: 5,  // Limit to 5 lines
+17:        overflow: TextOverflow.ellipsis,  // Show "..." if overflow
+18:      ),
+19:    );
+20:  }
+21:}
+
+[1] Which keyword in the Text widget controls how text behaves when it exceeds the available space? 
+    Textウィジェットにおいて, テキストが利用可能なスペースを超えたときの動作を制御するために使われるキーワードは何ですか? _5_
+[2] Which keyword is used to change the default text alignment? 
+    テキストのデフォルトの配置を変更するために使われるキーワードは何ですか?  _6_
+[3] Which keyword is used to limit the number of lines displayed for the text? 
+    テキストの表示行数を制限するために使われるキーワードは何ですか?  _7_
+[4] What value replaces the default 'overflow' behavior in this code? 
+    このコードでは, overflowのデフォルトの動作を置き換えるために使われる値は何ですか? _8_.ellipsis

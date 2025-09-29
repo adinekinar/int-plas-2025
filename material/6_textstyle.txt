@@ -1,0 +1,37 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void main() _1_ runApp(MyCustomText());
+04:
+05:_2_ MyCustomText extends StatelessWidget {
+06:  const MyCustomText({super.key});
+07:
+08:  @override
+09:  Widget build(BuildContext context) {
+10:    return MaterialApp(
+11:      home: _3_(
+12:        backgroundColor: Colors.white,
+13:        _4_: Center(
+14:          child: Text(
+15:            'Did you know? The Eiffel Tower can be 15 cm taller during the summer due to the expansion of iron in the heat.',
+16:            style: TextStyle(  // TextStyle is a property class for styling text
+17:              fontSize: 24, color: Colors.red,
+18:              fontStyle: FontStyle.italic,  // FontStyle options: normal, italic
+19:              fontWeight: FontWeight.w200,
+20:              // FontWeight ranges from w100 (thin) to w900 (bold)
+21:            ),
+22:            textAlign: TextAlign.center,  // Center-align the text
+23:          ),
+24:        ),
+25:      ),
+26:    );
+27:  }
+28:}
+
+[1] Which class is used to define the style for the text in this code? 
+    このコードでテキストのスタイルを定義するために使われているクラスは何ですか?  _5_
+[2] Which keyword is used to change the font size of the text? 
+    テキストのフォントサイズを変更するために使われるキーワードは何ですか?  _6_
+[3] Which keyword is used to apply an italic style to the text? 
+    テキストにイタリックスタイルを適用するために使われるキーワードは何ですか?  _7_
+[4] Which value is used to control the thickness or boldness of the text? 
+    テキストの太さ(太字具合)を制御するために使われる値は何ですか? _8_.w200

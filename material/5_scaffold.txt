@@ -1,0 +1,30 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void main() => runApp(MyApp());
+04:// => is a shorthand for functions with a single expression
+05:
+06:class MyApp extends StatelessWidget {
+07:  const MyApp({super.key});
+08:
+09:  @override
+10:  Widget _1_(BuildContext context) {
+11:    return _2_(
+12:      _3_: Scaffold(
+13:        backgroundColor: Colors.white, 
+14:        body: Center( // Main content area
+15:          child: _4_('This is text child from Center Widget.'),
+16:          // text is the child of Center
+17:        ),
+18:      ),
+19:    );
+20:  }
+21:}
+
+[1] What is the widget used as the main structure to implement basic visual layout for the app? 
+    アプリの基本的なレイアウトを実装するためのメイン構造として使われるウィジェットは何ですか? _5_
+[2] Which keyword in the Scaffold widget is used to set the background color? 
+    Scaffoldウィジェットで背景色を設定するために使われるキーワードは何ですか? _6_
+[3] Which widget is used to center the content inside the Scaffold body? 
+    Scaffold内のbodyで, コンテンツを中央に配置するために使われるウィジェットは何ですか? _7_()
+[4] Which keyword defines the main content area inside the Scaffold widget? 
+    Scaffoldウィジェット内で, メインの内容エリアを定義するために使われるキーワードは何ですか? _8_

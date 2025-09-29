@@ -1,0 +1,53 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void main() => _1_(_2_());
+04:
+05:class MyApp extends StatelessWidget {
+06:  // Function that returns a greeting message
+07:  String getGreetingMessage() {
+08:    return "Welcome to Flutter!";
+09:  }
+10:  @override
+11:  Widget build(BuildContext context) {
+12:    return MaterialApp(
+13:      home: Scaffold(
+14:        _3_: AppBar(
+15:          title: Text('Greeting App'),
+16:          backgroundColor: Colors.teal,
+17:        ),
+18:        body: Column(
+19:          mainAxisAlignment: MainAxisAlignment.center,
+20:          _4_: [
+21:            Container(
+22:              padding: EdgeInsets.all(16), margin: EdgeInsets.all(16),
+23:              decoration: _5_(
+24:                color: Colors.teal[50],
+25:                borderRadius: BorderRadius.circular(8),
+26:              ),
+27:              child: Text(
+28:                'Press the button below to see the message in the console.',
+29:                style: TextStyle(fontSize: 18), textAlign: TextAlign.center,
+30:              ),
+31:            ),
+32:            ElevatedButton(
+33:              onPressed: () {
+34:                String message = getGreetingMessage(); // Button to trigger the function
+35:                print(message); // Output to console
+36:              },
+37:              child: Text('Press Me'),
+38:            ),
+39:          ],
+40:        ),
+41:      ),
+42:    );
+43:  }
+44:}
+
+[1] What data type does the function return in this code? 
+    このコードで, 関数が返すデータ型は何ですか?  _6_
+[2] What is the name of the function that provides the greeting message in this code? 
+    このコードで, 挨拶メッセージを提供する関数の名前は何ですか? _7_
+[3] Which keyword is used to trigger the function when the button is pressed? 
+    ボタンが押されたときに関数を実行するために使われるキーワードは何ですか? _8_
+[4] What type of widget is used to create the button in this app? 
+    このアプリでボタンを作成するために使われているウィジェットの種類は何ですか? _9_

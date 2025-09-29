@@ -1,0 +1,18 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void main() {
+04:  runApp(MyApp());
+05:}
+
+[1] Which keyword is used to define the function that starts the app? 
+    アプリを開始する関数を定義するために使われるキーワードは何ですか? _1_
+[2] Which keyword is used to display the app UI in Flutter? 
+    FlutterでアプリのUIを表示するために使われるキーワードは何ですか? _2_
+[3] Which keyword is used to include external libraries in Flutter? 
+    Flutterで外部ライブラリを読み込むために使われるキーワードは何ですか? _3_
+[4] Which keyword represents the default library in Flutter for building user interfaces? 
+    FlutterでUIを構築するためのデフォルトのライブラリを表すキーワードは何ですか? _4_.dart
+[5] Which keyword is used as a prefix to import libraries from a Dart package? 
+    Dartパッケージからライブラリをインポートする際に使われる接頭辞のキーワードは何ですか? _5_
+[6] What symbol separates package from the library path in a Flutter import? 
+    Flutterのインポート文で,「package」とライブラリのパスを区切る記号は何ですか? _6_

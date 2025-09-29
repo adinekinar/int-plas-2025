@@ -1,0 +1,60 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void _1_() _2_ runApp(MyApp());
+04:
+05:class _3_ _4_ StatelessWidget {
+06:  // Function to generate a personalized greeting
+07:  String getGreetingMessage(String name) {
+08:    String timeGreeting = getTimeBasedGreeting(); // Get greeting based on time
+09:    if (name.isEmpty) {
+10:      return "$timeGreeting! Please provide your name for a personalized greeting.";
+11:    } else if (name.length <= 3) {
+12:      return "$timeGreeting, $name! Did you know your name is short and sweet?";
+13:    } else {
+14:      return "$timeGreeting, $name! It's great to have you here.";
+15:    }
+16:  }
+17:
+18:  // Function to determine greeting based on current hour
+19:  String getTimeBasedGreeting() {
+20:    int hour = DateTime.now().hour; // Get current hour
+21:    if (hour >= 5 && hour < 12) {
+22:      return "Good Morning";
+23:    } else if (hour >= 12 && hour < 18) {
+24:      return "Good Afternoon";
+25:    } else {
+26:      return "Good Evening";
+27:    }
+28:  }
+29:
+30:  @override
+31:  Widget build(_5_ context) {
+32:    // Example input name
+33:    String userName = "Eri";
+34:    // Call the function to get the greeting message
+35:    String message = getGreetingMessage(userName);
+36:
+37:    _6_ MaterialApp(
+38:      home: Scaffold(
+39:        appBar: _7_(title: Text('Personalized Greeting with Time')),
+40:        body: Center(
+41:          // Display the message
+42:          child: Text(
+43:            message,
+44:            _8_: TextStyle(fontSize: 24),
+45:            textAlign: TextAlign.center,
+46:          ),
+47:        ),
+48:      ),
+49:    );
+50:  }
+51:}
+
+[1] What is the return type of the getGreetingMessage function in this code? 
+    このコードで, getGreetingMessage関数の戻り値の型は何ですか?  _9_
+[2] What is the name of the function that generates a personalized greeting in this code? 
+    このコードで, パーソナライズされた挨拶(あいさつ)メッセージを生成する関数の名前は何ですか? _10_
+[3] In which method does the code call the getGreetingMessage function? 
+    getGreetingMessage関数が呼び出されているメソッドはどれですか? _11_(context) 
+[4] What widget is used to display the greeting message in this code? 
+    このコードで, 挨拶メッセージを表示するために使われているウィジェットは何ですか? _12_

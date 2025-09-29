@@ -1,0 +1,40 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void main() => runApp(MyApp());
+04:
+05:class MyApp extends StatelessWidget {
+06:  final List<String> songs = ['Shape of You', 'Blinding Lights', 'Levitating', 'Good 4 U', 'Stay'];
+07:
+08:  @override
+09:  Widget build(BuildContext context) {
+10:    return MaterialApp(
+11:      _1_: _2_(
+12:        appBar: AppBar(title: Text('Song List')),
+13:        _3_: Center(
+14:          child: Column(
+15:            mainAxisAlignment: _4_.center,
+16:            _5_: [
+17:              ElevatedButton(
+18:                _6_: () => print('Song List: ${songs.join(', ')}'),
+19:                child: Text('Print Songs List'),
+20:              ),
+21:              SizedBox(height: 20),
+22:              Text(
+23:                'Songs: ${songs.join(', ')}',
+24:                textAlign: TextAlign.center,
+25:                style: TextStyle(fontSize: 18),
+26:              ),
+27:            ],
+28:          ),
+29:        ),
+30:      ),
+31:    );
+32:  }
+33:}
+
+[1] Which keyword is used to define a list of items in Dart? 
+    Dartで複数のアイテムを含むリストを定義するために使われるキーワードは何ですか? _7_
+[2] What method is used to combine all elements of a list into a single string? 
+    リスト内のすべての要素を1つの文字列に結合するために使われるメソッドは何ですか? ._8_("")
+[3] Which widget is used to show the combined song list in the apps body? 
+    アプリのbody部分で, 結合された曲のリストを表示するために使われるウィジェットは何ですか? _9_

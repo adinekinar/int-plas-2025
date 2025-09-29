@@ -1,0 +1,50 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void main() => runApp(MyRowColumn());
+04:
+05:class MyRowColumn extends StatelessWidget {
+06:  @_1_
+07:  _2_ build(BuildContext context) {
+08:    return _3_(
+09:      home: _4_(
+10:        _5_: Column(
+11:          mainAxisAlignment: MainAxisAlignment.center, // Center items vertically
+12:          crossAxisAlignment: CrossAxisAlignment.center, // Center items horizontally
+13:          children: [
+14:            Row(
+15:              mainAxisAlignment: MainAxisAlignment.center, // Center items horizontally in Row
+16:              children: [
+17:                Icon(Icons.access_alarm, size: 50), // Icon widget
+18:                _6_( // Create blue box
+19:                  color: Colors.blue,
+20:                  width: 100, height: 50,
+21:                ),
+22:                Text('Row Item', style: TextStyle(fontSize: 18)),
+23:              ],
+24:            ),
+25:            SizedBox(height: 40), // Space between Row and Column
+26:            Column(
+27:              mainAxisAlignment: MainAxisAlignment.end, // Align items to the bottom (has no effect here)
+28:              crossAxisAlignment: CrossAxisAlignment.end, // Align items to the right
+29:              children: [
+30:                Container( // Create green box
+31:                  _7_: Colors.green,
+32:                  width: 100, height: 50,
+33:                ),
+34:                Icon(Icons.star, size: 50), // Icon widget
+35:                Text('Column Item', style: TextStyle(fontSize: 18)),
+36:              ],
+37:            ),
+38:          ],
+39:        ),
+40:      ),
+41:    );
+42:  }
+43:}
+
+[1] Which widget is used to arrange children horizontally in a layout? 
+    複数の子ウィジェットを横方向(水平)に並べるために使われるウィジェットは何ですか? _8_()
+[2] Which widget is used to arrange children vertically in a layout? 
+    複数の子ウィジェットを縦方向(垂直)に並べるために使われるウィジェットは何ですか? _9_()
+[3] Which keyword is used to specify the list of widgets inside a Row or Column? 
+    RowまたはColumnウィジェットの中で, ウィジェットのリストを指定するために使われるキーワードは何ですか? _10_

@@ -1,0 +1,26 @@
+01: _1_'package:flutter/_2_.dart';
+02:
+03:void main() {
+04:  runApp(MyMaterialApp());
+05:}
+06:
+07:class MyMaterialApp _3_ StatelessWidget {
+08:  MyMaterialApp({_4_.key});
+09:  val username = 'adreasl'; //using String variable
+10:  @override
+11:  Widget _5_ (BuildContext context) {
+12:    return MaterialApp(
+13:      title: 'My MaterialApp Flutter',
+14:      home: Text('Welcome back, $username!'),
+15:    );
+16:  }
+17:}
+
+[1] In this code, what is the widget used to set the app’s main structure, including its title and home screen? 
+    このコードでは, アプリのタイトルやホーム画面など, メイン構造を設定するために使われるウィジェットは何ですか?  _6_
+[2] What is the widget used to display the message “Welcome back, adreasl!” in this app? 
+    このアプリで「Welcome back, adreasl!」というメッセージを表示するために使われるウィジェットは何ですか?  _7_
+[3] In the MaterialApp widget, which keyword is used to define the main screen that appears when the app is launched? 
+    MaterialAppウィジェットの中で, アプリ起動時に最初に表示される画面を定義するために使われるキーワードは何ですか?  _8_
+[4] In the MaterialApp widget, which keyword is used to define the name of the application? 
+    MaterialAppウィジェットの中で, アプリの名前を定義するために使われるキーワードは何ですか? _9_

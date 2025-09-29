@@ -1,0 +1,27 @@
+01:import '_1_:flutter/material.dart';
+02:
+03:void _2_() {
+04:  runApp(MyApp());
+05:}
+06:
+07:class MyApp extends StatelessWidget {
+08:  MyApp({super.key});
+09:
+10:  @override
+11:  Widget build(BuildContext context) {
+12:    return FlutterLogo();
+13:  }
+14:}
+
+[1] Which keyword represents the main application widget class? 
+    アプリ全体を表すメインウィジェットクラスを定義するためのキーワードは何ですか?  _3_
+[2] Which keyword is used to override a method in Flutter? 
+    Flutterでメソッドをオーバーライドするために使われるキーワードは何ですか? @_4_ 
+[3] Which keyword is used to send a value back from a function in Dart? 
+    Dartの関数から値を返すために使われるキーワードは何ですか?  _5_
+[4] Which keyword is used to define the method that creates the widget’s UI in Flutter? 
+    FlutterでウィジェットのUIを作成するメソッドを定義するためのキーワードは何ですか? _6_
+[5] Which keyword is used to inherit properties from a parent class in Dart? 
+    Dartで親クラスのプロパティを継承するために使われるキーワードは何ですか? _7_
+[6] Which keyword is used to initialize the key of a superclass in Flutter? 
+    Flutterでスーパークラスのキーを初期化するために使われるキーワードは何ですか? _8_.key

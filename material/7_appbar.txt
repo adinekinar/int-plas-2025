@@ -1,0 +1,33 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void main() => runApp(_1_());
+04:
+05:class MyAppBar extends StatelessWidget {
+06:  @override
+07:  Widget build(BuildContext context) {
+08:    return MaterialApp(
+09:      _2_: Scaffold(
+10:        appBar: AppBar(
+11:          title: Text('Flutter Application'),
+12:          leading: Icon(Icons.menu),
+13:          actions: [
+14:            Icon(Icons.search),
+15:            Icon(Icons.notifications),
+16:          ],
+17:        ),
+18:        _3_: Center(
+19:          child: _4_('The sky was painted with vibrant hues of orange and pink as the sun set.'),
+20:        ),
+21:      ),
+22:    );
+23:  }
+24:}
+
+[1] Which widget is used to display the top bar of the app, typically containing the title and actions? 
+    アプリの上部に表示され, タイトルやアクションボタンを含むことが多いバーを表示するために使われるウィジェットは何ですか? _5_
+[2] Which keyword is used to define the icon that appears on the left side of the AppBar? 
+    AppBarで左側に表示されるアイコンを定義するために使われるキーワードは何ですか? _6_
+[3] Which keyword is used to add multiple icons to the AppBar? 
+    AppBarに複数のアイコンを追加するために使われるキーワードは何ですか? _7_
+[4] Which keyword in the AppBar widget is used to customize the title text displayed in the top bar? 
+    AppBarウィジェット内で, 上部バーに表示されるタイトルテキストをカスタマイズするために使われるキーワードは何ですか? _8_

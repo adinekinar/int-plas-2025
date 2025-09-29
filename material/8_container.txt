@@ -1,0 +1,39 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void main() => runApp(MyContainer());
+04:
+05:class MyContainer _1_ StatelessWidget {
+06:  @override
+07:  Widget build(BuildContext context) {
+08:    return MaterialApp(
+09:      home: _2_(
+10:        appBar: _3_(
+11:          _4_: Text('Container Application'),
+12:        ),
+13:        _5_: Center(
+14:          child: Container(
+15:            width: 300, height: 150,
+16:            margin: EdgeInsets.all(20),  // Margin: 20 pixels on all sides
+17:            padding: EdgeInsets.all(15), // Padding: 15 pixels on all sides
+18:            decoration: BoxDecoration(
+19:              color: Colors.blueAccent,  // Background color
+20:              border: Border.all(color: Colors.purple, width: 4), // Border
+21:            ),
+22:            child: Center(
+23:              child: Text('Technology continues to evolve at an unprecedented pace.'),
+24:            ),
+25:          ),
+26:        ),
+27:      ),
+28:    );
+29:  }
+30:}
+
+[1] Which widget is used to create a box model in Flutter that can contain other widgets? 
+    他のウィジェットを含むことができるボックス型のモデルを作成するために使われるウィジェットは何ですか? _6_
+[2] Which keyword is used to define the space around the container? 
+    Containerの周囲のスペース(外側の余白)を定義するために使われるキーワードは何ですか? _7_
+[3] Which keyword is used to add space inside the container, between the border and the child widget? 
+    Containerの内側(境界線と子ウィジェットの間)にスペースを追加するために使われるキーワードは何ですか? _8_
+[4] Which keyword is used to define the visual decoration, including color and border, of the container? 
+    Containerの色や境界線などの視覚的な装飾を定義するために使われるキーワードは何ですか?_9_

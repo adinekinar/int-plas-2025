@@ -1,0 +1,60 @@
+01:import 'package:flutter/material.dart';
+02:
+03:void main() => runApp(MyApp());
+04:
+05:class MyApp extends StatefulWidget {
+06:  @_1_
+07:  _MyAppState _2_() => _MyAppState();
+08:}
+09:
+10:class _3_ extends State<MyApp> {
+11:  bool isDarkMode = false; // Track the theme mode
+12:
+13:  void toggleTheme() {
+14:    setState(() {
+15:      isDarkMode = !isDarkMode; // Switch between light and dark modes
+16:    });
+17:  }
+18:
+19:  @override
+20:  Widget build(BuildContext context) {
+21:    _4_ MaterialApp(
+22:      home: _5_(
+23:        backgroundColor: isDarkMode ? Colors.black : Colors.white, // Change background color
+24:        _6_: AppBar(
+25:          title: Text(
+26:            isDarkMode ? 'Dark Mode' : 'Light Mode',
+27:            style: TextStyle(color: isDarkMode ? Colors.white : Colors.black),
+28:          ),
+29:          backgroundColor: isDarkMode ? Colors.grey[900] : Colors.blue,
+30:        ),
+31:        _7_: Center(
+32:          child: Column(
+33:            mainAxisAlignment: MainAxisAlignment.center,
+34:            children: [
+35:              Icon(
+36:                isDarkMode ? Icons.nights_stay : Icons.wb_sunny, // Change icon
+37:                size: 100,
+38:                color: isDarkMode ? Colors.yellow : Colors.orange,
+39:              ),
+40:              SizedBox(height: 20),
+41:              ElevatedButton(
+42:                _8_: toggleTheme, // Toggle the theme
+43:                child: Text(isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'),
+44:              ),
+45:            ],
+46:          ),
+47:        ),
+48:      ),
+49:    );
+50:  }
+51:}
+
+[1] What is the symbol used in this code to evaluate a condition and return one of two values? 
+    このコードで, 条件を評価して2つの値のいずれかを返すために使われている記号は何ですか? _9_
+[2] Which symbol in this code is used with ? to separate the true and false values? 
+    このコードで, ?と組み合わせて真(true)と偽(false)の値を区切るために使われている記号は何ですか? _10_
+[3] What is the condition used in the ternary operator to determine the theme mode in this code? 
+    このコードの三項演算子で, テーマモードを決定するために使われている条件は何ですか? _11_
+[4] Which widget in this code uses a ternary operator to change its background color? 
+    このコードで, 背景色を切り替えるために三項演算子を使っているウィジェットは何ですか? _12_
